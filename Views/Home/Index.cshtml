@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hoş Geldiniz</h1>
+    <p>Bu benim ilk ASP.NET Core MVC projem.</p>
+
+    <form method="post">
+        <div>
+            <label>Adınız:</label>
+            <input type="text" name="isim" class="form-control" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Gönder</button>
+    </form>
+
+    @if (ViewBag.Mesaj != null)
+    {
+        <h3>@ViewBag.Mesaj</h3>
+    }
+</div>
